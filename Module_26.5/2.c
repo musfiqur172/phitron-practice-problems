@@ -24,8 +24,14 @@ void bubble_sort(int ara[], int n)
 
 int main()
 {
-    int ara[] = {4, 3, 8, 2, 6};
-    int n = 5;
+    int ara[100];
+    int n, i;
+
+    scanf("%d", &n);
+    for (i = 0; i < n; i++)
+    {
+        scanf("%d", &ara[i]);
+    }
 
     bubble_sort(ara, 5);
 

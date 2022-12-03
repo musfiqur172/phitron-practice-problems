@@ -2,13 +2,13 @@
 
 int main()
 {
-    int x, y;
-    int *p, *q;
+    float x, y;
+    float *p, *q;
     p = &x;
     q = &y;
 
-    scanf("%d %d", p, q);
-    printf("%d\n", *p + *q);
+    scanf("%f %f", p, q);
+    printf("%0.3f\n", (*p + *q) / 2.0);
 
     return 0;
 }
