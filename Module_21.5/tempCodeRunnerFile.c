@@ -5,19 +5,22 @@
 
 int main()
 {
-    int t, n, i, even, odd;
-    int arr[100000];
-    scanf("%d", &t);
-    while (t--)
+    int n = 5, i, j;
+    int k = 1, l = (n * 2) - 2;
+    // scanf("%d", &n);
+    for (i = 1; i <= n; i++)
     {
-        scanf("%d", &n);
-        even = 0, odd = 0;
-        for (i = 0; i < n; i++)
+        for (j = l; j >= 1; j--)
         {
-            scanf("%d", &arr[i]);
-            arr[i] % 2 ? odd++ : even++;
+            printf(" ");
         }
-        printf("%d\n", even < odd ? even : odd);
+        l = l - 2;
+        for (j = 1; j <= k; j++)
+        {
+            printf("* ");
+        }
+        printf("\n");
+        k = k + 2;
     }
 
     return 0;
